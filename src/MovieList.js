@@ -11,12 +11,9 @@ const MovieList = () => {
       setMovies(response.data.data);
       console.log(response.data.data);
     } catch (error) {
-      setError("No movies found");
     }
   };
-  const [year, setYear] = useState("");
   const [movies, setMovies] = useState([]);
-  const [error, setError] = useState("");
 
   return (
     <div className=" h-full">
